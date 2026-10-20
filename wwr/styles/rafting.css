@@ -17,6 +17,7 @@
 body {
     font-family: var(--heading-font);
    font-weight: 800;
+   background-color:whitesmoke;
 }
 
 
@@ -228,7 +229,7 @@ nav a {
     grid-column: 1 / -1;
     
 }
- h1 {
+ .company-info h1 {
     color: #5a3d8a;
     margin-top: 5px;
 text-align: center;
@@ -396,4 +397,117 @@ input[type="checkbox"]{
 .employee-gallery figcaption {
     margin-top: 10px;
     font-weight: bold;
+}
+.trips {
+    text-align: center;
+    border: 1px solid black;
+   width: 800px;
+   margin: auto;
+   padding: 20px;
+   margin-top: 10px;
+   
+}
+ .trips h3 {
+padding: 5px;
+color: #264653;
+font-size: 2rem;
+}
+.trips p{
+    padding: 20px;
+}
+.trips a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+   
+}
+.trips button{
+    border: none;
+    border-radius: 5px;
+    background-color: darkred;
+    padding: 5px;
+ transition: transform 0.3s, box-shadow 0.3s;
+}
+.trips button:hover{
+     transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+table{
+    border:1px solid black ;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    margin: auto;
+    width: 800px;
+    height: 300px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.w {
+    background-color: white; 
+    color: black;            
+    text-align: center;      
+    font-size: 1.2rem;
+    padding: 20px; 
+   font-weight: bold;
+   
+}
+
+tr,td,th{
+   padding: 10px;
+    border:1px solid black ;
+    text-align: center;
+}
+th{
+ background-color: navy;
+ color: #ffffff;
+ font-weight: bold;
+ font-size: 1rem;
+}
+.trips-section {
+    border: 1px solid black;
+    width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.f {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.f img {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    display: block;
+    margin: 0;
+}
+
+.f h2 {
+
+    color: red;
+    padding: 0;
+   text-align: left;
+   background-color: whitesmoke;
+}
+
+.f figcaption {
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+    background-color: whitesmoke;
+     font-family: var(--heading-font);
+}
+.f h1{
+   
+  color: #264653;
+  font-size: larger;
+    margin-top: 5px;
+text-align: center;
+margin-bottom: 5px;
+ background-color: whitesmoke;
+
 }
