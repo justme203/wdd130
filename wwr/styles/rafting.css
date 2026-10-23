@@ -12,12 +12,12 @@
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: 'times new roman', "Georgia", serif;
-    --body-font: 'Arial', "Helvetica", sans-serif;   
+    --body-font:'times new roman', "Georgia", serif ;   
 }
 body {
     font-family: var(--heading-font);
-   font-weight: 800;
-   background-color:whitesmoke;
+   font-weight: 400;
+   background: #eeeeea;
 }
 
 
@@ -170,24 +170,25 @@ nav a {
 }
 
 .history h2 {
+    font-family: var(--heading-font);
     text-align: center;
     margin-bottom: 10px;
 }
 
 .history-content {
     display: grid;
-    grid-template-columns: 1fr 400px 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 250px 1fr;
     align-items: center;
     width: 100%;
    
 }
 
 .history-content img {
-    width: 200px;
+    width:100%;
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 8px;
 }
 .adventure-gallery {
     display: grid;
@@ -200,6 +201,7 @@ nav a {
 }
 
 .adventure-gallery h2 {
+    font-family: var(--heading-font);
     grid-column: 1 / -1;
     text-align: center;
     margin-bottom: 0;
@@ -230,12 +232,14 @@ nav a {
     
 }
  .company-info h1 {
+    font-family: var(--heading-font);
     color: #5a3d8a;
     margin-top: 5px;
 text-align: center;
 margin-bottom: 5px;
 }
 .company-info h2 {
+    font-family: var(--heading-font);
     color: #5a3d8a;
     margin-bottom: 5px;
 }
@@ -352,7 +356,7 @@ input[type="checkbox"]{
 
 .employee-section h2 {
     color: #5a3d8a;
-    
+    font-family: var(--heading-font);
 }
 
 .employee-gallery {
@@ -408,6 +412,7 @@ input[type="checkbox"]{
    
 }
  .trips h3 {
+    font-family: var(--heading-font);
 padding: 5px;
 color: #264653;
 font-size: 2rem;
@@ -459,6 +464,7 @@ tr,td,th{
     text-align: center;
 }
 th{
+    font-family: var(--heading-font);
  background-color: navy;
  color: #ffffff;
  font-weight: bold;
@@ -469,45 +475,200 @@ th{
     width: 800px;
     margin: 10px auto;
     padding: 10px;
-}
-
-.f {
-    display: grid;
+     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     text-align: center;
 }
 
+.f{
+    border-radius: 10px;
+    background-color: lightgray;
+}
 .f img {
     width: 100%;
     height: 220px;
     border-radius: 8px;
     display: block;
     margin: 0;
+    object-fit: cover;
 }
 
-.f h2 {
-
+.f h3 {
+font-family: var(--heading-font);
     color: red;
     padding: 0;
    text-align: left;
-   background-color: whitesmoke;
 }
 
-.f figcaption {
-    margin: 0;
-    padding: 0;
-    border-radius: 8px;
-    background-color: whitesmoke;
-     font-family: var(--heading-font);
-}
-.f h1{
-   
-  color: #264653;
+.f h2{
+    font-family: var(--heading-font);
+  color: var(--accent1-color);
   font-size: larger;
-    margin-top: 5px;
-text-align: center;
-margin-bottom: 5px;
- background-color: whitesmoke;
 
+
+}
+.home{
+     position: relative;
+    width: 800px;
+    margin: auto;
+    margin-top: 15px;
+}
+.home img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    border: 1px solid black;
+}
+.home p {
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 10px;
+    width: 800px;
+    padding: 20px;
+    font-family: var(--heading-font);
+    text-align: center;
+    color: #f4f2fb;
+    font-size: xx-large;
+}
+.news{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 800px;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 15px;
+    gap: 10px;
+    padding: 15px;
+    background-color: #eeeeea;
+}
+.full{
+   
+    padding: 16px;
+    padding-bottom: 1px;
+  
+    
+}
+.full button{
+    margin-top: 10px;
+   padding:10px ;
+    background-color:var(--secondary-color) ;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+     transition: transform 0.3s, box-shadow 0.3s;
+}
+.butto :hover{
+    background-color:navy;
+    color: white;
+     transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+}
+.news input{
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    font-size: medium;
+    background-color: #ddd;
+    color: black;
+    
+}
+.info {
+    padding: 16px;
+    color: black;
+}
+.m{
+     padding: 16px;
+   color: darkblue;
+}
+section{
+    border: 1px solid black;
+    margin: auto;
+    width: 800px;
+    margin-top: 15px;
+    padding: 30px;
+
+}
+section h2{
+    text-align: center;
+    padding: 16px;
+}
+section p{
+padding: 20px;
+line-height: 38px;
+}
+section button{
+   margin: 0 auto;
+   cursor: pointer;
+   border: none;
+   border-radius: 8px;
+   background-color: var(--secondary-color);
+   padding: 16px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+section button:hover{
+     background-color:navy;
+    color: white;
+     transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+section a{
+    text-decoration: none;
+    color: white;
+}
+.ourpurpose{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    width: 800px;
+     gap: 10px;
+     margin-top: 15px;
+     border: 1px solid black;
+     padding: 16px;
+     background-color: #ddd;
+}
+.ourpurpose img{
+    width: 100%;
+     object-fit: cover;
+     height: 300px;
+     border-radius: 8px;
+   
+}
+.purpose h2{
+color: navy;
+line-height: 70px;
+}
+.purpose{
+line-height: 30px;
+padding: 0.5rem;
+}
+.purpose{
+border-radius: 8px;
+background-color: #eeeeea;
+}
+.ourpurpose button{
+    grid-column: 1 / 3;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    margin:0 auto;
+    background-color: var(--secondary-color);
+    
+}
+.ourpurpose button:hover{
+    transform: translate(20px);
+   background-color:navy;
+    color: white;
+}
+ 
+.ourpurpose button a {
+    text-decoration: none;
+    color: black;
+}
+.ourpurpose button:hover a {
+    color: white;
 }
