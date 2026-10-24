@@ -112,12 +112,12 @@ nav a {
 .hero article p {
     line-height: 1.5;
 }
-.hero article h3 {
+.hero article h2 {
     position: static;
     width: auto;
     padding: 0;
     margin-bottom: auto;
-    color: white;
+    color: black;
     opacity: 1;
 }
  footer {
@@ -154,12 +154,6 @@ nav a {
 .socialmedia a:hover {
     background-color: var(--accent2-color);
      transition: background-color 0.3s ease;
-}
-.socialmedia img {
-    width:16;
-    height: 16;
-    gap: 1pxs;
-     border: none;
 }
 .history {
     border: 1px solid black;
@@ -411,7 +405,7 @@ input[type="checkbox"]{
    margin-top: 10px;
    
 }
- .trips h3 {
+ .trips h1 {
     font-family: var(--heading-font);
 padding: 5px;
 color: #264653;
@@ -424,16 +418,15 @@ font-size: 2rem;
     text-decoration: none;
     color: white;
     font-size: 1rem;
-   
-}
-.trips button{
-    border: none;
+   border: none;
     border-radius: 5px;
-    background-color: darkred;
+     background-color: darkred;
     padding: 5px;
  transition: transform 0.3s, box-shadow 0.3s;
 }
-.trips button:hover{
+.trips a:hover{
+     background-color:navy;
+    color: white;
      transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -520,7 +513,7 @@ font-family: var(--heading-font);
     margin: auto;
     border: 1px solid black;
 }
-.home p {
+.home h1 {
     background-color: var(--secondary-color);
     position: absolute;
     top: 10px;
@@ -598,8 +591,16 @@ section p{
 padding: 20px;
 line-height: 38px;
 }
-section button{
-   margin: 0 auto;
+
+section a:hover{
+     background-color:navy;
+    color: white;
+     transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+section a{
+    text-decoration: none;
+     margin: 0 auto;
    cursor: pointer;
    border: none;
    border-radius: 8px;
@@ -609,16 +610,7 @@ section button{
     justify-content: center;
     align-items: center;
     width: 200px;
-}
-section button:hover{
-     background-color:navy;
-    color: white;
-     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-section a{
-    text-decoration: none;
-    color: white;
+    color: #222;
 }
 .ourpurpose{
     display: grid;
@@ -650,24 +642,22 @@ padding: 0.5rem;
 border-radius: 8px;
 background-color: #eeeeea;
 }
-.ourpurpose button{
-    grid-column: 1 / 3;
-    border: none;
-    border-radius: 8px;
-    padding: 14px;
-    margin:0 auto;
-    background-color: var(--secondary-color);
-    
-}
-.ourpurpose button:hover{
+
+.ourpurpose a:hover{
     transform: translate(20px);
    background-color:navy;
     color: white;
 }
  
-.ourpurpose button a {
+.ourpurpose a {
     text-decoration: none;
     color: black;
+     grid-column: 1 / 3;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    margin:0 auto;
+    background-color: var(--secondary-color);
 }
 .ourpurpose button:hover a {
     color: white;
