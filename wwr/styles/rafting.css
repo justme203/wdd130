@@ -12,7 +12,6 @@
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: 'times new roman', "Georgia", serif;
-    --body-font:'times new roman', "Georgia", serif ;   
 }
 body {
     font-family: var(--heading-font);
@@ -99,7 +98,7 @@ nav a {
     width: 90%;
     min-height: 100px;
     padding: 0px;
-    background-color: var(--accent1-color);
+    background-color:  var(--accent1-color);
     color: white;
     border: 1px solid black;
 }
@@ -117,7 +116,7 @@ nav a {
     width: auto;
     padding: 0;
     margin-bottom: auto;
-    color: black;
+    color: white;
     opacity: 1;
 }
  footer {
@@ -275,6 +274,7 @@ margin-bottom: 5px;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: bold;
+
 }
 
 .form input[type="email"],
@@ -289,6 +289,7 @@ form textarea {
     font-size: 1rem;
     height: 100px;
 }
+
 
 input[type="checkbox"]{
     height: 20px;
@@ -366,19 +367,6 @@ input[type="checkbox"]{
     
 }
 
-
-.employee-gallery figure {
-   
-    padding: 15px;
-    border-radius: 8px;
-}
-
-
-
-.employee-gallery figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-}
 .employee-gallery figure {
     background-color: #f4f2fb;
     padding: 15px;
@@ -489,7 +477,7 @@ th{
 
 .f h3 {
 font-family: var(--heading-font);
-    color: red;
+    color: blue;
     padding: 0;
    text-align: left;
 }
@@ -514,7 +502,7 @@ font-family: var(--heading-font);
     border: 1px solid black;
 }
 .home h1 {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     position: absolute;
     top: 10px;
     width: 800px;
@@ -637,8 +625,6 @@ line-height: 70px;
 .purpose{
 line-height: 30px;
 padding: 0.5rem;
-}
-.purpose{
 border-radius: 8px;
 background-color: #eeeeea;
 }
